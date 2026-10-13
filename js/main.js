@@ -539,7 +539,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const roomId = options.roomId !== undefined ? options.roomId : (categorySelect?.value || '');
     if (roomId) {
-      if (roomId === 'standard' || roomId.includes('314795')) query += '&room-type=314795,314796';
+      if (roomId === 'standard_single' || roomId === '314795') query += '&room-type=314795';
+      else if (roomId === 'standard_double' || roomId === '314796') query += '&room-type=314796';
+      else if (roomId === 'standard' || roomId.includes('314795,314796')) query += '&room-type=314795,314796';
       else if (roomId === 'comfort' || roomId.includes('314798')) query += '&room-type=314798';
       else if (roomId === 'suite' || roomId.includes('317310')) query += '&room-type=317310';
       else query += `&room-type=${encodeURIComponent(roomId)}`;
@@ -670,11 +672,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Реальные фото номеров и зон отдыха
   const roomGalleries = {
-    standard: [
-      'assets/images/web/rooms/standard_main.jpg',
+    standard_single: [
+      'assets/images/web/rooms/standard_single.jpg',
+      'assets/images/web/rooms/standard_single_desk.jpg',
+      'assets/images/web/rooms/standard_bath.jpg'
+    ],
+    standard_double: [
+      'assets/images/web/rooms/standard_double.jpg',
       'assets/images/web/rooms/standard_2.jpg',
       'assets/images/web/rooms/standard_desk.jpg',
-      'assets/images/web/rooms/standard_single.jpg'
+      'assets/images/web/rooms/standard_bath.jpg'
+    ],
+    standard: [
+      'assets/images/web/rooms/standard_single.jpg',
+      'assets/images/web/rooms/standard_double.jpg',
+      'assets/images/web/rooms/standard_2.jpg',
+      'assets/images/web/rooms/standard_bath.jpg'
     ],
     comfort: [
       'assets/images/web/rooms/comfort_main.jpg',
@@ -692,9 +705,10 @@ document.addEventListener('DOMContentLoaded', () => {
       'assets/images/web/rooms/suite_bath.jpg'
     ],
     sauna: [
+      'assets/images/web/facilities/sauna_lounge.jpg',
+      'assets/images/web/facilities/sauna_green_wall.jpg',
       'assets/images/web/facilities/sauna_steam.jpg',
       'assets/images/web/facilities/sauna_benches.jpg',
-      'assets/images/web/facilities/sauna_lounge.jpg',
       'assets/images/web/facilities/sauna_shower.jpg'
     ],
     cafe: [
