@@ -3728,3 +3728,8 @@ button {
   .legal-card h1 { font-size: 1.5rem; }
   .legal-card table { display: block; overflow-x: auto; }
 }
+.rooms-price-note__link {
+  color: var(--color-brass);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
