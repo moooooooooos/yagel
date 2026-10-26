@@ -675,19 +675,25 @@ document.addEventListener('DOMContentLoaded', () => {
     standard_single: [
       'assets/images/web/rooms/standard_single.jpg',
       'assets/images/web/rooms/standard_single_desk.jpg',
-      'assets/images/web/rooms/standard_bath.jpg'
+      'assets/images/web/rooms/standard_bath.jpg',
+      'assets/images/web/rooms/standard_bath_shower.jpg',
+      'assets/images/web/rooms/standard_bath_mirror.jpg'
     ],
     standard_double: [
       'assets/images/web/rooms/standard_double.jpg',
       'assets/images/web/rooms/standard_2.jpg',
       'assets/images/web/rooms/standard_desk.jpg',
-      'assets/images/web/rooms/standard_bath.jpg'
+      'assets/images/web/rooms/standard_bath.jpg',
+      'assets/images/web/rooms/standard_bath_shower.jpg',
+      'assets/images/web/rooms/standard_bath_mirror.jpg'
     ],
     standard: [
       'assets/images/web/rooms/standard_single.jpg',
       'assets/images/web/rooms/standard_double.jpg',
       'assets/images/web/rooms/standard_2.jpg',
-      'assets/images/web/rooms/standard_bath.jpg'
+      'assets/images/web/rooms/standard_bath.jpg',
+      'assets/images/web/rooms/standard_bath_shower.jpg',
+      'assets/images/web/rooms/standard_bath_mirror.jpg'
     ],
     comfort: [
       'assets/images/web/rooms/comfort_main.jpg',
@@ -695,7 +701,11 @@ document.addEventListener('DOMContentLoaded', () => {
       'assets/images/web/rooms/comfort_kitchen.jpg',
       'assets/images/web/rooms/comfort_panorama.jpg',
       'assets/images/web/rooms/comfort_tea_desk.jpg',
-      'assets/images/web/rooms/comfort_bath.jpg'
+      'assets/images/web/rooms/comfort_bath.jpg',
+      'assets/images/web/rooms/comfort_bath_vanity.jpg',
+      'assets/images/web/rooms/comfort_bath_overview.jpg',
+      'assets/images/web/rooms/comfort_bath_shower.jpg',
+      'assets/images/web/rooms/comfort_bath_robe.jpg'
     ],
     suite: [
       'assets/images/web/rooms/suite_main.jpg',
@@ -707,9 +717,9 @@ document.addEventListener('DOMContentLoaded', () => {
     sauna: [
       'assets/images/web/facilities/sauna_lounge.jpg',
       'assets/images/web/facilities/sauna_green_wall.jpg',
-      'assets/images/web/facilities/sauna_steam.jpg',
+      'assets/images/web/facilities/sauna_steam_room.jpg',
       'assets/images/web/facilities/sauna_benches.jpg',
-      'assets/images/web/facilities/sauna_shower.jpg'
+      'assets/images/web/facilities/sauna_massage.jpg'
     ],
     cafe: [
       'assets/images/web/facilities/cafe_main.jpg',
