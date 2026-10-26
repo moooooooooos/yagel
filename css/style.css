@@ -3733,3 +3733,8 @@ button {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+
+/* Шапка юридических страниц на телефоне: без номера телефона, чтобы не наезжать на логотип */
+@media screen and (max-width: 600px) {
+  .header__contacts .header__phone { display: none; }
+}
