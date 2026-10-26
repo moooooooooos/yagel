@@ -763,3 +763,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
+
+// Уведомление о cookie: показываем, пока посетитель его не закрыл
+(function () {
+  const banner = document.getElementById('cookie-banner');
+  const acceptBtn = document.getElementById('cookie-accept');
+  if (!banner || !acceptBtn) return;
+
+  const STORAGE_KEY = 'yagel-cookie-notice';
+  let accepted = false;
+  try { accepted = localStorage.getItem(STORAGE_KEY) === '1'; } catch (e) {}
+  if (!accepted) banner.hidden = false;
+
+  acceptBtn.addEventListener('click', () => {
+    banner.hidden = true;
+    try { localStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
+  });
+})();

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /*?tl-booking-open
+
+Sitemap: https://yagelhotel.ru/sitemap.xml

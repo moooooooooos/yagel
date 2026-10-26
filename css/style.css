@@ -3,7 +3,7 @@
    Глубокая природная палитра, баланс теплого камня и темной хвои
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+/* Шрифт Inter подключается локально: assets/fonts/fonts.css */
 
 :root {
   /* Палитра тихого люкса (Warm Linen, Nordic Pine, Deep Slate) */
@@ -3616,4 +3616,115 @@ button {
   .gallery-cell__title { font-size: 0.95rem; }
   .footer__grid { grid-template-columns: 1fr; }
   .footer__bottom { flex-direction: column; gap: 10px; text-align: center; }
+}
+
+/* --- Юридические сведения в подвале --- */
+.footer__legal {
+  margin-top: 20px;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: rgba(244, 242, 234, 0.45);
+}
+.footer__legal p + p { margin-top: 6px; }
+.footer__legal a {
+  color: rgba(244, 242, 234, 0.7);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.rooms-price-note {
+  margin-top: 10px;
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+/* --- Уведомление о cookie --- */
+.cookie-banner {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 1000;
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: var(--color-surface-warm);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.16);
+}
+.cookie-banner[hidden] { display: none; }
+.cookie-banner__text {
+  margin: 0;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+}
+.cookie-banner__text a {
+  color: var(--color-pine);
+  text-decoration: underline;
+}
+.cookie-banner__btn { flex-shrink: 0; min-height: 44px; }
+.tl-with-fancybox .cookie-banner { display: none !important; }
+
+@media screen and (max-width: 900px) {
+  .cookie-banner { bottom: calc(80px + env(safe-area-inset-bottom, 0px)); }
+}
+@media screen and (max-width: 600px) {
+  .cookie-banner {
+    left: 12px;
+    right: 12px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 12px 14px;
+  }
+  .cookie-banner__text { font-size: 0.75rem; line-height: 1.45; }
+}
+
+/* --- Юридические страницы --- */
+.legal-page {
+  padding: 120px 0 80px;
+}
+.breadcrumbs {
+  display: flex;
+  gap: 8px;
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+}
+.breadcrumbs a { color: var(--color-text-secondary); }
+.legal-card {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 48px 56px;
+  background: var(--color-surface-warm);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  color: var(--color-text);
+  line-height: 1.65;
+}
+.legal-card h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+.legal-card h2 {
+  font-size: 1.125rem;
+  margin: 32px 0 12px;
+}
+.legal-card p, .legal-card li { margin-bottom: 10px; }
+.legal-card ul { padding-left: 22px; list-style: disc; }
+.legal-card a { color: var(--color-pine); text-decoration: underline; }
+.legal-card .legal-meta { font-size: 0.875rem; color: var(--color-text-muted); }
+.legal-card table { width: 100%; border-collapse: collapse; margin: 12px 0 16px; font-size: 0.9rem; }
+.legal-card th, .legal-card td { border: 1px solid var(--color-border); padding: 8px 10px; text-align: left; vertical-align: top; }
+@media screen and (max-width: 600px) {
+  .legal-page { padding: 96px 0 48px; }
+  .legal-card { padding: 28px 20px; border-radius: 12px; }
+  .legal-card h1 { font-size: 1.5rem; }
+  .legal-card table { display: block; overflow-x: auto; }
 }
