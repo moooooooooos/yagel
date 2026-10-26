@@ -675,25 +675,25 @@ document.addEventListener('DOMContentLoaded', () => {
     standard_single: [
       'assets/images/web/rooms/standard_single.jpg',
       'assets/images/web/rooms/standard_single_desk.jpg',
-      'assets/images/web/rooms/standard_bath.jpg',
-      'assets/images/web/rooms/standard_bath_shower.jpg',
-      'assets/images/web/rooms/standard_bath_mirror.jpg'
+      'assets/images/web/rooms/standard_bath_v2.jpg',
+      'assets/images/web/rooms/standard_bath_shower_v2.jpg',
+      'assets/images/web/rooms/standard_bath_mirror_v2.jpg'
     ],
     standard_double: [
       'assets/images/web/rooms/standard_double.jpg',
       'assets/images/web/rooms/standard_2.jpg',
       'assets/images/web/rooms/standard_desk.jpg',
-      'assets/images/web/rooms/standard_bath.jpg',
-      'assets/images/web/rooms/standard_bath_shower.jpg',
-      'assets/images/web/rooms/standard_bath_mirror.jpg'
+      'assets/images/web/rooms/standard_bath_v2.jpg',
+      'assets/images/web/rooms/standard_bath_shower_v2.jpg',
+      'assets/images/web/rooms/standard_bath_mirror_v2.jpg'
     ],
     standard: [
       'assets/images/web/rooms/standard_single.jpg',
       'assets/images/web/rooms/standard_double.jpg',
       'assets/images/web/rooms/standard_2.jpg',
-      'assets/images/web/rooms/standard_bath.jpg',
-      'assets/images/web/rooms/standard_bath_shower.jpg',
-      'assets/images/web/rooms/standard_bath_mirror.jpg'
+      'assets/images/web/rooms/standard_bath_v2.jpg',
+      'assets/images/web/rooms/standard_bath_shower_v2.jpg',
+      'assets/images/web/rooms/standard_bath_mirror_v2.jpg'
     ],
     comfort: [
       'assets/images/web/rooms/comfort_main.jpg',
@@ -701,11 +701,11 @@ document.addEventListener('DOMContentLoaded', () => {
       'assets/images/web/rooms/comfort_kitchen.jpg',
       'assets/images/web/rooms/comfort_panorama.jpg',
       'assets/images/web/rooms/comfort_tea_desk.jpg',
-      'assets/images/web/rooms/comfort_bath.jpg',
-      'assets/images/web/rooms/comfort_bath_vanity.jpg',
-      'assets/images/web/rooms/comfort_bath_overview.jpg',
-      'assets/images/web/rooms/comfort_bath_shower.jpg',
-      'assets/images/web/rooms/comfort_bath_robe.jpg'
+      'assets/images/web/rooms/comfort_bath_v2.jpg',
+      'assets/images/web/rooms/comfort_bath_vanity_v2.jpg',
+      'assets/images/web/rooms/comfort_bath_overview_v2.jpg',
+      'assets/images/web/rooms/comfort_bath_shower_v2.jpg',
+      'assets/images/web/rooms/comfort_bath_robe_v2.jpg'
     ],
     suite: [
       'assets/images/web/rooms/suite_main.jpg',
