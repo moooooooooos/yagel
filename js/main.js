@@ -717,7 +717,8 @@ document.addEventListener('DOMContentLoaded', () => {
     sauna: [
       'assets/images/web/facilities/sauna_lounge.jpg',
       'assets/images/web/facilities/sauna_green_wall.jpg',
-      'assets/images/web/facilities/sauna_steam_room.jpg',
+      'assets/images/web/facilities/sauna_steam_room_v2.jpg',
+      'assets/images/web/facilities/sauna_entrance.jpg',
       'assets/images/web/facilities/sauna_benches.jpg',
       'assets/images/web/facilities/sauna_massage.jpg'
     ],
@@ -727,7 +728,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'assets/images/web/facilities/cafe_coffee.jpg'
     ],
     gym: [
-      'assets/images/web/facilities/gym_main.jpg',
+      'assets/images/web/facilities/gym_main_v2.jpg',
       'assets/images/web/facilities/gym_cardio.jpg'
     ]
   };

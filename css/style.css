@@ -1205,7 +1205,7 @@ button {
 /* Факты доверия (Trust Badges) */
 .hero-stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-top: 36px;
 }
@@ -1285,14 +1285,8 @@ button {
   flex-direction: column;
 }
 
-.why-card:nth-child(1),
-.why-card:nth-child(2),
-.why-card:nth-child(3) {
-  grid-column: span 2;
-}
-
-.why-card:nth-child(4),
-.why-card:nth-child(5) {
+/* 4 карточки — сетка 2×2 */
+.why-card {
   grid-column: span 3;
 }
 
@@ -3541,7 +3535,7 @@ button {
 @media screen and (max-width: 1100px) {
   .video-features-row { grid-template-columns: repeat(2, 1fr); }
   .facilities-grid { grid-template-columns: 1fr; max-width: 540px; margin: 0 auto; }
-  .hero-stats { grid-template-columns: repeat(2, 1fr); }
+  .hero-stats { grid-template-columns: repeat(3, 1fr); }
   .editorial-grid { grid-template-columns: 1fr; gap: 36px; }
   .editorial-img-wrap { height: 360px; }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
@@ -3632,10 +3626,47 @@ button {
   text-underline-offset: 2px;
 }
 
-.rooms-price-note {
-  margin-top: 10px;
+/* Условия проживания и бронирования в разделе номеров */
+.rooms-terms {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 20px;
+  max-width: 980px;
+  margin: 0 auto 48px;
+}
+.rooms-terms__card {
+  padding: 24px 28px;
+  border: 1px solid var(--color-border-dark);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-text-light-muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+.rooms-terms__title {
+  margin-bottom: 10px;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-text-light);
+}
+.rooms-terms__list li + li { margin-top: 8px; }
+.rooms-terms__list strong { color: var(--color-text-light); font-weight: 600; }
+.rooms-terms__link {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--color-brass);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+@media screen and (max-width: 860px) {
+  .rooms-terms { grid-template-columns: 1fr; }
+}
+
+.facility-card__note {
+  margin-top: 14px;
   font-size: 0.875rem;
-  opacity: 0.8;
+  font-weight: 600;
+  color: var(--color-pine);
 }
 
 /* --- Уведомление о cookie --- */
@@ -3727,11 +3758,6 @@ button {
   .legal-card { padding: 28px 20px; border-radius: 12px; }
   .legal-card h1 { font-size: 1.5rem; }
   .legal-card table { display: block; overflow-x: auto; }
-}
-.rooms-price-note__link {
-  color: var(--color-brass);
-  text-decoration: underline;
-  text-underline-offset: 2px;
 }
 
 /* Шапка юридических страниц на телефоне: без номера телефона, чтобы не наезжать на логотип */
